@@ -2,37 +2,44 @@
   background-color: rgb(0, 0, 0);
   display: flex;
   color: white;
-  width: 500px;
+  min-width: 22rem;
   padding: 10px;
+  justify-content: space-between;
+  border-radius: 50px;
 }
 
 .TwitterCard-header {
-  display: inherit;
+  display: flex;
   gap: 2%;
+  justify-content: center;
 }
 
-img {
-  width: 20%;
+.TwitterCard-info {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 8px;
 }
 
-header > div > span {
+.TwitterCard-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+.TwitterCard-infoName {
   opacity: 0.5;
 }
 
-header > div {
-  padding: 10px;
-}
-aside {
-  padding: 10px;
+.TwitterCard-aside {
   display: flex;
 }
 
-button {
+.TwitterCard-followButton {
   background-color: #fff;
   color: #000;
-  padding: 0px 40px;
-  font-weight: bolder;
-  font-size: 15px;
-  border-radius: 50px;
-  border: thin solid #fff;
+  margin: 5px 5px;
+  padding: 0 20px;
+  font-weight: bold;
+  border-radius: 999px;
+  border: 0;
 }

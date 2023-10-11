@@ -9,8 +9,7 @@ export function TwitterCard({ username, name, isFollowing }) {
         />
         <div className="TwitterCard-info">
           <strong>{username}</strong>
-          <br />
-          <span className="TwitterCard-info">@{name}</span>
+          <span className="TwitterCard-infoName">@{name}</span>
         </div>
       </header>
       <aside className="TwitterCard-aside">
