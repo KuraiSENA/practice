@@ -10,7 +10,6 @@
 
 .TwitterCard-header {
   display: flex;
-  gap: 2%;
   justify-content: center;
 }
 
@@ -34,7 +33,7 @@
   display: flex;
 }
 
-.TwitterCard-followButton {
+.TwitterCard-button {
   background-color: #fff;
   color: #000;
   margin: 5px 5px;
@@ -42,4 +41,31 @@
   font-weight: bold;
   border-radius: 999px;
   border: 0;
+}
+
+.TwitterCard-button.is-following {
+  background-color: red;
+  color: #fff;
+}
+
+.TwitterCard-unFollowButton {
+  display: none;
+}
+
+.TwitterCard-button.is-following:hover .TwitterCard-followButton {
+  display: none;
+}
+
+.TwitterCard-button.is-following:hover .TwitterCard-unFollowButton {
+  display: block;
+}
+
+.TwitterCard-button.is-following:hover {
+  cursor: pointer;
+  background-color: rgb(134, 10, 10);
+}
+
+.TwitterCard-button:hover {
+  cursor: pointer;
+  background-color: aqua;
 }
